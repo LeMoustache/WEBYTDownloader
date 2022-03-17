@@ -72,7 +72,7 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory=r"C:\Users\eagle\Desktop\Folders\Pyhton Codes\Websites\YTDownloader"), name="static")
+app.mount("/", StaticFiles(directory="."), name="static", html=True)
 
 app.add_middleware(
     CORSMiddleware,
