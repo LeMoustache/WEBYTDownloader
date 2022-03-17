@@ -88,10 +88,6 @@ class Video(BaseModel):
     url: str
     ##name: str
 
-@app.get("/")
-async def main():
-    return {"VideoName":""}
-
 @app.get("/video")
 def get_Video():
     #print(URLs)
